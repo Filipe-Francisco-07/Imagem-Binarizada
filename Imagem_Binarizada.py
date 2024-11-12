@@ -3,7 +3,7 @@ def inserirImagem(arquivo):
         cabecalho = f.readline().strip()
         dimensoes = f.readline().strip()
         maiorvalor = int(f.readline().strip())
-        cabecalho.replace("P2","P1")
+        cabecalho = cabecalho.replace("P2","P1")
         pixels = []
         for line in f:
             pixels.extend(map(int, line.split()))
